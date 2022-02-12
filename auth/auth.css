@@ -1,0 +1,17 @@
+@import url("/homepage.css");
+
+#login {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#input_subheading {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#login_button {
+    color: var(--white-color);
+}
