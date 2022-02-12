@@ -20,7 +20,7 @@
 
 /* ---------- || Header || ------------ */
 
-header {
+.main_header {
     grid-area: header;
 }
 
@@ -30,27 +30,28 @@ header .header_logo {
     font-family: 'Lora', serif;
 }
 
-#tagline {
+header .tagline {
     font-family: 'Marck Script', cursive;
     color: rgb(163, 89, 66);
 }
 
-#search {
+header .search {
     border: 1px solid var(--shadow-color);
     border-radius: 5%;
     padding: 0.2em 1em;
 }
 
-#header_btn {
+.header_btn {
     font-size: 0.9em;
     border: 0;
 }
 
-#header_icon {
+header .nav_right i  {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
-#header_icon_num {
+header .nav_right span {
     font-size: 0.8em;
     height: 1.5em;
     min-width: 1.5em;
@@ -62,7 +63,7 @@ header .header_logo {
 
 /* ---------- || Navigation || ------------ */
 
-nav {
+.main_nav {
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -79,7 +80,7 @@ nav {
 
 /* ---------- || Main || ------------ */
 
-main {
+.main_main {
     color: var(--primary-color);
     justify-content: center;
     align-items: flex-start;
@@ -95,7 +96,7 @@ main {
 
 /* ---------- || Sections || ------------ */
 
-section {
+.main_section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +110,7 @@ section {
     background-color: var(--shadow-color);
     width: 100%;
     height: 100%;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 .content {
@@ -155,7 +156,7 @@ section {
         "main"
         "section";
     }
-    nav {
+    .main_nav {
         margin-top: 4rem;
     }
 }
