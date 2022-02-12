@@ -1,0 +1,29 @@
+@import url("/homepage.css");
+
+#login {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#input_subheading {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#login_button {
+    color: var(--white-color);
+}
+
+form .inp_checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.6rem;
+}
+
+.checkbox_notify {
+    padding-top: 1.1rem;
+    font-size: 0.9rem;
+}
