@@ -37,7 +37,6 @@ header .tagline {
 
 header .search {
     border: 1px solid var(--shadow-color);
-    border-radius: 5%;
     padding: 0.2em 1em;
 }
 

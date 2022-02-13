@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/auth/auth.css">
+    <link rel="stylesheet" href="/product-list/product-list.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
+    <title>EasyBuy - Product Page</title>
+</head>
+
+<body>
+
+    <div class="product_main_wrapper">
+
+        <!--- Header --->
+
+        <header class="main_header">
+            <div class="navigation" id="header_box">
+                <div class="nav_left logo">
+                    <a class="header_logo" href="/">easYbuY</a>
+                    <p class="tagline">We Value Your Choices</p>
+                </div>
+                <div class="nav_center searchbar">
+                    <input type="search" class="input input_search search" placeholder="Search" />
+                </div>
+                <div class="nav_right">
+                    <button class="header_btn">
+                        <a class="btn btn_primary" href="/auth/login.html">Login</a>
+                    </button>
+
+                    <div class="badge_container badge_icon">
+                        <i class="fa fa-heart-o"></i>
+                        <span class="badge_icon_num badge_status"> 3 </span>
+                    </div>
+
+                    <div class="badge_container badge_icon">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge_icon_num badge_status"> 4 </span>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!---- Filters with <aside> tag ---->
+
+        <aside class="filter_container flex_column">
+
+            <div class="filter_head filter_spaces">
+                <h3 class="filter_headings">Filters</h3>
+                <a class="filter_clear" href="#">Clear</a>
+            </div>
+
+            <div class="filter_price flex_column filter_spaces">
+                <h3 class="filter_headings">Price</h3>
+                <div class="filter_price_range">
+                    <h3 class="filter_headings">10</h3>
+                    <h3 class="filter_headings">50</h3>
+                    <h3 class="filter_headings">100</h3>
+                </div>
+                <input type="range">
+            </div>
+
+            <div class="filter_category  flex_column">
+                <h3 class="filter_headings">Category</h3>
+                <div class="inp_checkbox">
+                    <input type="checkbox" class="input_checkbox">
+                    <p class="checkbox_notify">Men Clothing</p>
+                </div>
+                <div class="inp_checkbox">
+                    <input type="checkbox" class="input_checkbox">
+                    <p class="checkbox_notify">Women Clothing</p>
+                </div>
+            </div>
+
+            <div class="filter_rating flex_column filter_spaces">
+                <h3 class="filter_headings">Rating</h3>
+                <form class="rating_options flex_column">
+                    <label>
+                        <input type="radio" name="rating" value="4 Stars & above" /> 4 Stars & above
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3 Stars & above" /> 3 Stars & above
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2 Stars & above" /> 2 Stars & above
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="1 Stars & above" /> 1 Stars & above
+                    </label>
+                </form>
+            </div>
+
+            <div class="filter_sortby flex_column filter_spaces">
+                <h3 class="filter_headings">Sort by</h3>
+                <form class="rating_options flex_column">
+                    <label>
+                        <input type="radio" name="rating" value="Price - Low to High" /> Price - Low to High
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="Price - High to Low" /> Price - High to Low
+                    </label>
+                </form>
+            </div>
+
+        </aside>
+
+        <!---- Product List - Main ---->
+
+        <main class="product_container">
+            <div class="product_heading">
+                <h3>Showing All Products</h3>
+                <p>(Showing 10 Products)</p>
+            </div>
+
+            <div class="product_list">
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
+                            <p class="card_text">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
