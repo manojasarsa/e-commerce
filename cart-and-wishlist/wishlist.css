@@ -13,6 +13,6 @@
 }
 
 .card_heart_icon i {
-    color: red;
+    color: var(--red-color);
     cursor: pointer;
 }  

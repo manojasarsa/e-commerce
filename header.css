@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     border-bottom: 0;
-    z-index: 999;
+    z-index: 5;
 }
 
 .nav_center {
@@ -54,9 +54,10 @@ header .nav_right i  {
 }
 
 header .nav_right span {
-    font-size: 0.8em;
-    height: 1.5em;
-    min-width: 1.5em;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    top: -1rem;
 }
 
 #header_box {
