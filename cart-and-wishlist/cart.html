@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cart-and-wishlist/cart.css">
+    <link rel="stylesheet" href="/homepage.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+    <div class="cart_wrapper">
+
+        <!-- Header -->
+
+        <header class="main_header">
+            <div class="navigation" id="header_box">
+                <div class="nav_left logo">
+                    <a class="header_logo" href="/">easYbuY</a>
+                    <p class="tagline">We Value Your Choices</p>
+                </div>
+                <div class="nav_center searchbar">
+                    <input type="search" class="input input_search search" placeholder="Search" />
+                </div>
+                <div class="nav_right">
+                    
+                    <a class="btn btn_primary" href="/auth/login.html">Login</a>
+        
+                    <div class="badge_container badge_icon">
+                        <a href="/cart-and-wishlist/wishlist.html">
+                            <i class="fa fa-heart-o"></i>
+                            <span class="badge_icon_num badge_status"> 3 </span>
+                        </a>
+                    </div>
+
+                    <div class="badge_container badge_icon">
+                        <a href="/cart-and-wishlist/cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="badge_icon_num badge_status"> 4 </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Cart Management -->
+
+        <main class="cart_container flex_column">
+
+            <h2 class="cart_title">MY CART (1)</h2>
+
+            <!-- cart_box consists Horizontal Card and Price Details Box -->
+
+            <div class="cart_box">
+
+                <!-- Horizonatl Card -->
+
+                <div class="card_grid">
+                    <img class="img_responsive" src="/images/brownjckt.jpg" alt="shopping-item">
+
+                    <div class="card_horizontal_text flex_column">
+                        <p class="card_tex left_space">Women Premium Jacket</p>
+                        <p class="card_subtext left_space">Cotton Super Combed Fabric</p>
+                        <p class="card_text card_price left_space">₹2,999
+                            <span class="text_line_through">₹4,999</span>
+                        </p>
+                        <div class="cart_qty">
+                            <p class="qty_name">Quantity:</p>
+                            <button class="qty_minus"> - </button>
+                            <input class="qty_input" type="number" value="1">
+                            <button class="qty_add"> + </button>
+                        </div>
+                        <button class="btn btn_primary_outline right_space">Remove from Cart</button>
+                        <button class="btn btn_primary right_space">Move to Wishlist</button>
+                    </div>
+                </div>
+
+
+                <!-- Price Box -->
+
+                <div class="cart_price_box flex_column">
+
+                    <h4>PRICE DETAILS</h4>
+
+                    <hr class="line_space">
+
+                    <div class="price_menu">
+                        <span class="price_name">Price (2 items)</span>
+                        <span class="price_amount">₹4,999</span>
+                    </div>
+                    <div class="price_menu">
+                        <span class="price_name">Discount</span>
+                        <span class="price_amount">- ₹2,000</span>
+                    </div>
+                    <div class="price_menu">
+                        <span class="price_name">Delivery Charges</span>
+                        <span class="price_amount">₹499</span>
+                    </div>
+
+                    <hr class="line_space">
+
+                    <div class="price_menu">
+                        <span class="price_name">Delivery Charges</span>
+                        <span class="price_amount">₹3,499</span>
+                    </div>
+
+                    <hr class="line_space">
+
+                    <h5 class="line_space">You will save ₹1,499 on this order</h5>
+
+                    <button class="btn btn_secondary">PLACE ORDER</button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -13,6 +13,12 @@
 
 .main_header {
     grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+    z-index: 999;
 }
 
 /* -- Filters with <aside> tag -- */
@@ -20,7 +26,7 @@
 .filter_container {
     grid-area: aside;
     padding: 2rem;
-    margin-top: 0.3rem;
+    margin-top: 5rem;
     background-color: var(--shadow-color);
 }
 
@@ -70,7 +76,7 @@
 
 .product_container {
     grid-area: main;
-    margin: 1rem;
+    margin: 5rem;
 }
 
 .product_heading {

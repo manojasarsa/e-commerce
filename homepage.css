@@ -10,7 +10,7 @@
     grid-gap: 1rem;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 10% 2fr 50vh 4fr;
-    padding-bottom: 0.5rem;    
+    padding-bottom: 0.5rem;
     grid-template-areas:
     "header header header"
     ". nav ."
@@ -22,6 +22,12 @@
 
 .main_header {
     grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+    z-index: 999;
 }
 
 header .header_logo {
