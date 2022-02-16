@@ -42,8 +42,12 @@ header .tagline {
 }
 
 header .search {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0;
+    border: none;
     border: 1px solid var(--shadow-color);
-    padding: 0.2em 1em;
 }
 
 .header_btn {

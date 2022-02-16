@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/cart-and-wishlist/cart.css">
     <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/common-css/common.css">
     <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
     <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
     <title>Cart Page</title>
@@ -26,7 +27,7 @@
                     <p class="tagline">We Value Your Choices</p>
                 </div>
                 <div class="nav_center searchbar">
-                    <input type="search" class="input input_search search" placeholder="Search" />
+                    <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
                 </div>
                 <div class="nav_right">
                     
@@ -78,7 +79,16 @@
                             <button class="qty_add"> + </button>
                         </div>
                         <button class="btn btn_primary_outline right_space">Remove from Cart</button>
-                        <button class="btn btn_primary right_space">Move to Wishlist</button>
+
+                        <button class="btn btn_secondary btn_toast right_space btn_leading">Move to Wishlist</button>
+                        <span class="card_heart_icon">
+                            <i class="fa fa-heart"></i>
+                        </span>
+
+                        <div class="toast toast_box">
+                            Added to Wishlist
+                        </div>
+
                     </div>
                 </div>
 
@@ -123,6 +133,8 @@
         </main>
 
     </div>
+
+    <script src="/javascript/added-to-cart.js"></script>
 
 </body>
 
