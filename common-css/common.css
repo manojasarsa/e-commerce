@@ -1,0 +1,103 @@
+/* Header -- Fixed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Tangerine&display=swap');
+
+.main_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+    z-index: 5;
+}
+
+.nav_center {
+    flex-basis: 25%;
+}
+
+header .header_logo {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+}
+
+header .tagline {
+    font-family: 'Marck Script', cursive;
+    color: rgb(163, 89, 66);
+}
+
+header .search {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0;
+    border: none;
+    border: 1px solid var(--shadow-color);
+}
+
+.header .nav_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 10%;
+}
+
+.header_btn {
+    font-size: 0.9rem;
+    border: 0;
+}
+
+header .nav_right i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header .nav_right span {
+    font-size: 0.8rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    top: -1rem;
+}
+
+#header_box {
+    border: 0;
+}
+
+/* Toast */
+/* This code will be moved to CL - Toast section soon.. Also, change time for it */
+.card_horizontal_text .btn_toast {
+    width: auto;
+}
+
+.card_horizontal_text .toast {
+    background-color: var(--secondary-color);
+}
+
+.card_vertical_info .btn_toast {
+    width: auto;
+}
+
+.card_vertical_info .toast {
+    background-color: var(--secondary-color);
+}
+
+/* Alerts */
+
+.card_vertical_info .alert_success {
+    color: var(--success-color);
+    background-color: var(--success-background-color);
+}
+
+.card_horizontal_text .alert_success {
+    color: var(--success-color);
+    background-color: var(--success-background-color);
+}
+
+/* Wishlist - Cards */
+
+.card_heart_icon:hover {
+    cursor: pointer;
+}
