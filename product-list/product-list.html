@@ -11,16 +11,14 @@
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/auth/auth.css">
     <link rel="stylesheet" href="/product-list/product-list.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <title>EasyBuy - Product Page</title>
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Product Page</title>
 </head>
 
 <body>
 
     <div class="product_main_wrapper">
-
-        <!--- Header --->
 
         <header class="main_header">
             <div class="navigation" id="header_box">
@@ -32,18 +30,20 @@
                     <input type="search" class="input input_search search" placeholder="Search" />
                 </div>
                 <div class="nav_right">
-                    <button class="header_btn">
-                        <a class="btn btn_primary" href="/auth/login.html">Login</a>
-                    </button>
+                    <a class="btn btn_primary" href="/auth/login.html">Login</a>
 
                     <div class="badge_container badge_icon">
-                        <i class="fa fa-heart-o"></i>
-                        <span class="badge_icon_num badge_status"> 3 </span>
+                        <a href="/cart-and-wishlist/wishlist.html">
+                            <i class="fa fa-heart-o"></i>
+                            <span class="badge_icon_num badge_status"> 3 </span>
+                        </a>
                     </div>
 
                     <div class="badge_container badge_icon">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span class="badge_icon_num badge_status"> 4 </span>
+                        <a href="/cart-and-wishlist/cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="badge_icon_num badge_status"> 4 </span>
+                        </a>
                     </div>
 
                 </div>
@@ -292,12 +292,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
-
     </div>
 
 </body>
-
 </html>

@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/auth/auth.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <title>E-commerce</title>
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>EasyBuy</title>
 </head>
 
 <body>
@@ -28,18 +28,21 @@
                     <input type="search" class="input input_search search" placeholder="Search" />
                 </div>
                 <div class="nav_right">
-                    <button class="header_btn">
-                        <a class="btn btn_primary" href="/auth/login.html">Login</a>
-                    </button>
+
+                    <a class="btn btn_primary" href="/auth/login.html">Login</a>
 
                     <div class="badge_container badge_icon">
-                        <i class="fa fa-heart-o"></i>
-                        <span class="badge_icon_num badge_status"> 3 </span>
+                        <a href="/cart-and-wishlist/wishlist.html">
+                            <i class="fa fa-heart-o"></i>
+                            <span class="badge_icon_num badge_status"> 3 </span>
+                        </a>
                     </div>
 
                     <div class="badge_container badge_icon">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span class="badge_icon_num badge_status"> 4 </span>
+                        <a href="/cart-and-wishlist/cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="badge_icon_num badge_status"> 4 </span>
+                        </a>
                     </div>
 
                 </div>
@@ -83,7 +86,7 @@
                     <h2><a class="btn btn_primary_outline" href="#">Add to Bag</a></h2>
                 </div>
                 <h2 class="tag_heading">NEW ARRIVALS</h2>
-                
+
             </article>
 
             <article class="new_arrivals">
@@ -96,7 +99,6 @@
                 <h2 class="tag_heading">TRENDING</h2>
             </article>
         </section>
-
     </div>
 
 </body>
