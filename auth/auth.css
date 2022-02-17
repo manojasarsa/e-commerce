@@ -1,9 +1,10 @@
 @import url("/homepage.css");
 
-#login {
-    width: 30%;
+#auth_container {
+    width: 25%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    padding-bottom: 1rem;
 }
 
 #input_subheading {
