@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/common-css/common.css">
     <link rel="stylesheet" href="/auth/auth.css">
-    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
     <title>EasyBuy</title>
 </head>
 
@@ -19,7 +16,7 @@
 
     <div class="main_container">
         <header class="main_header">
-            <div class="navigation" id="header_box">
+            <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
                 <div class="nav_left logo">
                     <a class="header_logo" href="/">easYbuY</a>
                     <p class="tagline">We Value Your Choices</p>
@@ -27,63 +24,59 @@
                 <div class="nav_center searchbar">
                     <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
                 </div>
-                <div class="nav_right">
+                <div class="nav_right flex flex_justify_between flex_align_center">
 
                     <a class="btn btn_primary" href="/auth/login.html">Login</a>
 
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/wishlist.html">
-                            <i class="fa fa-heart-o"></i>
-                            <span class="badge_icon_num badge_status"> 3 </span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 3 </span>
                         </a>
                     </div>
 
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/cart.html">
                             <i class="fa fa-shopping-cart"></i>
-                            <span class="badge_icon_num badge_status"> 4 </span>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 4 </span>
                         </a>
                     </div>
-
                 </div>
             </div>
         </header>
 
-        <nav class="main_nav">
-            <div class="nav_item flex_column">Men
-                <div class="back">
-                    <img src="/images/blackdenim.jpg" alt="" class="img_responsive adjust_img">
-                </div>
+        <nav class="main_nav flex flex_align_center">
+            <a href="/product-list/product-list.html" class="nav_item flex flex_col flex_align_center">Men
+                <img src="/images/blackdenim.jpg" alt="" class="img_responsive adjust_img">
+            </a>
 
-            </div>
-            <div class="nav_item flex_column">Women
-                <div class="back">
-                    <img src="/images/brownjckt.jpg" alt="" class="img_responsive adjust_img">
-                </div>
-            </div>
-            <div class="nav_item flex_column">Kids
+            <a href="/product-list/product-list.html" class="nav_item flex flex_col flex_align_center">Women
+                <img src="/images/brownjckt.jpg" alt="" class="img_responsive adjust_img">
+            </a>
+
+            <a href="/product-list/product-list.html" class="nav_item flex flex_col flex_align_center">Kids
                 <img src="/images/male.jpg" alt="" class="img_responsive adjust_img">
-            </div>
+            </a>
 
-            <div class="nav_item flex_column">Best Sellers
+            <a href="/product-list/product-list.html" class="nav_item flex flex_col flex_align_center">Best Sellers
                 <img src="/images/women2.jpg" alt="" class="img_responsive adjust_img">
-            </div>
+            </a>
         </nav>
 
-        <main class="main_main flex_column">
+        <main class="main_main flex flex_col flex_justify_center flex_align_start">
             <h2>CELEBRATE THIS SUMMER</h2>
             <h2>30% OFF</h2>
             <a class="btn btn_secondary" href="/product-list/product-list.html">SHOP NOW</a>
         </main>
 
-        <section class="main_section">
+        <section class="main_section flex flex_justify_between flex_align_center">
 
             <article class="new_arrivals">
                 <div class="background">
                     <img src="/images/bmen.jpg" alt="" class="img_responsive adjust_img">
                 </div>
-                <div class="content">
-                    <h2><a class="btn btn_primary_outline" href="#">Add to Bag</a></h2>
+                <div class="content flex_col flex_justify_center flex_align_start">
+                    <h2><a class="btn btn_primary_outline" href="/cart-and-wishlist/cart.html">Add to Bag</a></h2>
                 </div>
                 <h2 class="tag_heading">NEW ARRIVALS</h2>
 
@@ -93,8 +86,8 @@
                 <div class="background">
                     <img src="/images/bwomen.jpg" alt="" class="img_responsive adjust_img">
                 </div>
-                <div class="content">
-                    <h2><a class="btn btn_primary_outline" href="#">Shop Now</a></h2>
+                <div class="content flex_col flex_justify_center flex_align_start">
+                    <h2><a class="btn btn_primary_outline" href="/product-list/product-list.html">Shop Now</a></h2>
                 </div>
                 <h2 class="tag_heading">TRENDING</h2>
             </article>

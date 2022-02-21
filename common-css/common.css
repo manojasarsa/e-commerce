@@ -1,9 +1,4 @@
 /* Header -- Fixed */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Tangerine&display=swap');
 
 .main_header {
     position: fixed;
@@ -39,9 +34,6 @@ header .search {
 }
 
 .header .nav_right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-basis: 10%;
 }
 
@@ -67,17 +59,9 @@ header .nav_right span {
 }
 
 /* Toast */
-/* This code will be moved to CL - Toast section soon.. Also, change time for it */
-.card_horizontal_text .btn_toast {
-    width: auto;
-}
 
 .card_horizontal_text .toast {
     background-color: var(--secondary-color);
-}
-
-.card_vertical_info .btn_toast {
-    width: auto;
 }
 
 .card_vertical_info .toast {
@@ -94,10 +78,4 @@ header .nav_right span {
 .card_horizontal_text .alert_success {
     color: var(--success-color);
     background-color: var(--success-background-color);
-}
-
-/* Wishlist - Cards */
-
-.card_heart_icon:hover {
-    cursor: pointer;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/common-css/common.css">
     <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
-    <title>Login</title>
+    <title>Forgot Password</title>
 </head>
 
 <body>
@@ -43,24 +43,14 @@
             </div>
         </div>
     </header>
-        
-    <div class="input_container flex flex_col" id="auth_container">
-        <form class="input_field flex flex_col">
-            <h2 class="input_heading">Login</h2>
-            <label class="input_label">Email address</label>
-            <input class="input_box" type="email" placeholder="manoj@neog.camp" required />
-            <label class="input_label">Password</label>
-            <input class="input_box" type="name" placeholder="***********" required />
-            <div class="inp_checkbox flex flex_justify_start flex_align_center">
-                <input type="checkbox" class="input_checkbox"> 
-                <p class="checkbox_notify">Remember me</p>
-            </div>
-            <p class="input_subheading"><a href="/auth/forgotpwd.html" id="input_subheading">Forgot your Password?</a> 
-            </p> 
-            <button class="btn btn_secondary">Login</button>
-            <p class="input_subheading"><a href="/auth/signup.html" id="input_subheading">Create New Account ></a> 
-        </form>
-    </div>
-        
+
+    <main class="logout_container flex flex_align_center flex_justify_center">
+        <div class="logout_box flex flex_col flex_justify_center flex_align_center">
+            <i class="fas fa-circle-check icon fa-2x"></i>
+            <p class="logout_text">You have been logged out successfully!</p>
+            <a class="link" href="/">Back to Home</a>
+        </div>
+    </main>
+
 </body>
 </html>

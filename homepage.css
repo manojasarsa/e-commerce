@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Tangerine&display=swap');
-
 .main_container {
     display: grid;
     height: 100vh;
@@ -33,7 +27,6 @@
 header .header_logo {
     color: var(--secondary-color);
     font-size: 1.5rem;
-    font-family: 'Lora', serif;
 }
 
 header .tagline {
@@ -74,26 +67,31 @@ header .nav_right span {
 /* ---------- || Navigation || ------------ */
 
 .main_nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
     gap: 1rem;
     grid-area: nav;
 }
 
 .nav_item {
-    align-items: center;
     background-color: var(--shadow-color);
     height: 100%;
     width: 25%;
+    transition: var(--trans-5);
+}
+
+.nav_item:hover {
+    opacity: 1;
+    transform: scale(0.96);
+    transition: var(--trans-5);
+}
+
+.main_nav a{
+    color: var(--primary-color);
 }
 
 /* ---------- || Main || ------------ */
 
 .main_main {
     color: var(--primary-color);
-    justify-content: center;
-    align-items: flex-start;
     padding-left: 1rem;
     background-color: var(--shadow-color);
     grid-area: main;
@@ -101,15 +99,11 @@ header .nav_right span {
     background-repeat: no-repeat;
     background-position: start ;
     background-size: cover;
-    font-family: 'Lora', serif;
 }
 
 /* ---------- || Sections || ------------ */
 
 .main_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 1rem;
     grid-area: section;
 }
@@ -125,9 +119,6 @@ header .nav_right span {
 
 .content {
     display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     width: 100%;
     height: 100%;
     font-size: 0.5rem;   
@@ -141,7 +132,6 @@ header .nav_right span {
 }
 
 .tag_heading {
-    font-family: 'Lora', serif;
     grid-area: 1 / -1;
     justify-self: flex-start;
     align-self: start;
@@ -165,8 +155,5 @@ header .nav_right span {
         "nav"
         "main"
         "section";
-    }
-    .main_nav {
-        margin-top: 4rem;
     }
 }

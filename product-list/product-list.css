@@ -33,7 +33,7 @@
 .filter_clear {
     color: var(--primary-color);
     align-self: center;
-    font-weight: 600;
+    font-weight: var(--fw-semi-bold);
     font-size: 1rem;
 }
 
@@ -44,27 +44,11 @@
 .filter_headings {
     padding: 0.5rem 0;
 }
-
-.filter_head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.filter_price_range {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .checkbox_notify {
     font-size: 0.8rem;
 }
 
 .filter_category .inp_checkbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     column-gap: 0.6rem;
 }
 
@@ -80,9 +64,6 @@
 }
 
 .product_heading {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     column-gap: 0.5rem;
 }
 
