@@ -1,7 +1,6 @@
 @import url("/homepage.css");
 
 #auth_container {
-    width: 25%;
     margin: 0 auto;
     margin-top: 10rem;
     padding-bottom: 1rem;
@@ -18,13 +17,31 @@
 }
 
 form .inp_checkbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     column-gap: 0.6rem;
 }
 
 .checkbox_notify {
     padding-top: 1.1rem;
     font-size: 0.9rem;
+}
+
+/* logout */
+
+.logout_container {
+    margin-top: 10rem;
+}
+
+.logout_box {
+    box-shadow: 1px 1px 1px 5px var(--shadow-color);
+    width: 40rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.logout_text {
+    margin: 1rem;
+}
+
+.logout_box .link {
+    color: var(--secondary-color);
 }

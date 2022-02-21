@@ -5,14 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/cart-and-wishlist/cart.css">
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/common-css/common.css">
-    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
     <title>Cart Page</title>
 </head>
 
@@ -21,7 +17,7 @@
     <div class="cart_wrapper">
 
         <header class="main_header">
-            <div class="navigation" id="header_box">
+            <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
                 <div class="nav_left logo">
                     <a class="header_logo" href="/">easYbuY</a>
                     <p class="tagline">We Value Your Choices</p>
@@ -29,50 +25,51 @@
                 <div class="nav_center searchbar">
                     <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
                 </div>
-                <div class="nav_right">
-                    
+                <div class="nav_right flex flex_justify_between flex_align_center">
+
                     <a class="btn btn_primary" href="/auth/login.html">Login</a>
-        
+
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/wishlist.html">
-                            <i class="fa fa-heart-o"></i>
-                            <span class="badge_icon_num badge_status"> 3 </span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 3 </span>
                         </a>
                     </div>
 
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/cart.html">
                             <i class="fa fa-shopping-cart"></i>
-                            <span class="badge_icon_num badge_status"> 4 </span>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 4 </span>
                         </a>
                     </div>
-
                 </div>
             </div>
         </header>
 
         <!-- Cart Management -->
 
-        <main class="cart_container flex_column">
+        <main class="cart_container flex flex_col">
 
             <h2 class="cart_title">MY CART (1)</h2>
 
             <!-- cart_box consists Horizontal Card and Price Details Box -->
 
-            <div class="cart_box">
+            <div class="cart_box flex flex_wrap">
 
                 <!-- Horizonatl Card -->
 
                 <div class="card_grid">
-                    <img class="img_responsive" src="/images/brownjckt.jpg" alt="shopping-item">
+                    <div class="cart_img">
+                        <img class="img_responsive" src="/images/brownjckt.jpg" alt="shopping-item">
+                    </div>
 
-                    <div class="card_horizontal_text flex_column">
-                        <p class="card_tex left_space">Women Premium Jacket</p>
+                    <div class="card_horizontal_text flex flex_col">
+                        <p class="card_text left_space">Women Premium Jacket</p>
                         <p class="card_subtext left_space">Cotton Super Combed Fabric</p>
                         <p class="card_text card_price left_space">₹2,999
                             <span class="text_line_through">₹4,999</span>
                         </p>
-                        <div class="cart_qty">
+                        <div class="cart_qty flex flex_justify_center flex_align_center">
                             <p class="qty_name">Quantity:</p>
                             <button class="qty_minus"> - </button>
                             <input class="qty_input" type="number" value="1">
@@ -80,18 +77,15 @@
                         </div>
                         <button class="btn btn_primary_outline btn_toast right_space btn_leading">Remove from Cart</button>
 
-                        <div class="alert_success toast toast_box">
-                            <span class="material-icons-outlined">task_alt</span>
+                        <div class="alert_success toast flex flex_justify_center flex_align_center toast_box">
+                            <i class="fa-solid fa-check"></i>
                             <span>Removed from Cart! </span>
                         </div>
 
                         <button class="btn btn_secondary btn_toast right_space btn_leading">Move to Wishlist</button>
-                        <span class="card_heart_icon">
-                            <i class="fa fa-heart"></i>
-                        </span>
 
-                        <div class="alert_success toast toast_box">
-                            <span class="material-icons-outlined">task_alt</span>
+                        <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                            <i class="fa-solid fa-check"></i>
                             <span>Moved to Wishlist - check it out! </span>
                         </div>
 
@@ -100,28 +94,28 @@
 
                 <!-- Price Box -->
 
-                <div class="cart_price_box flex_column">
+                <div class="cart_price_box flex flex_col">
 
                     <h4>PRICE DETAILS</h4>
 
                     <hr class="line_space">
 
-                    <div class="price_menu">
+                    <div class="price_menu flex flex_justify_between">
                         <span class="price_name">Price (2 items)</span>
                         <span class="price_amount">₹4,999</span>
                     </div>
-                    <div class="price_menu">
+                    <div class="price_menu flex flex_justify_between">
                         <span class="price_name">Discount</span>
                         <span class="price_amount">- ₹2,000</span>
                     </div>
-                    <div class="price_menu">
+                    <div class="price_menu flex flex_justify_between">
                         <span class="price_name">Delivery Charges</span>
                         <span class="price_amount">₹499</span>
                     </div>
 
                     <hr class="line_space">
 
-                    <div class="price_menu">
+                    <div class="price_menu flex flex_justify_between">
                         <span class="price_name">Delivery Charges</span>
                         <span class="price_amount">₹3,499</span>
                     </div>

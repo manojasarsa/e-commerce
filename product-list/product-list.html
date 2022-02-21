@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/auth/auth.css">
     <link rel="stylesheet" href="/product-list/product-list.css">
     <link rel="stylesheet" href="/common-css/common.css">
-    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
     <title>Product Page</title>
 </head>
 
@@ -22,7 +18,7 @@
     <div class="product_main_wrapper">
 
         <header class="main_header">
-            <div class="navigation" id="header_box">
+            <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
                 <div class="nav_left logo">
                     <a class="header_logo" href="/">easYbuY</a>
                     <p class="tagline">We Value Your Choices</p>
@@ -30,61 +26,62 @@
                 <div class="nav_center searchbar">
                     <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
                 </div>
-                <div class="nav_right">
+                <div class="nav_right flex flex_justify_between flex_align_center">
+    
                     <a class="btn btn_primary" href="/auth/login.html">Login</a>
-
+    
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/wishlist.html">
-                            <i class="fa fa-heart-o"></i>
-                            <span class="badge_icon_num badge_status"> 3 </span>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 3 </span>
                         </a>
                     </div>
-
+    
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/cart.html">
                             <i class="fa fa-shopping-cart"></i>
-                            <span class="badge_icon_num badge_status"> 4 </span>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 4 </span>
                         </a>
                     </div>
-
+    
                 </div>
             </div>
         </header>
 
         <!---- Filters with <aside> tag ---->
 
-        <aside class="filter_container flex_column">
+        <aside class="filter_container flex flex_col">
 
-            <div class="filter_head filter_spaces">
+            <div class="flex flex_row flex_justify_between filter_spaces">
                 <h3 class="filter_headings">Filters</h3>
                 <a class="filter_clear" href="#">Clear</a>
             </div>
 
-            <div class="filter_price flex_column filter_spaces">
+            <div class="filter_price flex flex_col filter_spaces">
                 <h3 class="filter_headings">Price</h3>
-                <div class="filter_price_range">
+                <div class="flex flex_row flex_justify_between">
                     <h3 class="filter_headings">10</h3>
                     <h3 class="filter_headings">50</h3>
                     <h3 class="filter_headings">100</h3>
                 </div>
-                <input type="range">
+                <input type="range" class="slider" min="10" max="100" value="50" step="10">
             </div>
 
-            <div class="filter_category  flex_column">
+            <div class="filter_category  flex flex_col">
                 <h3 class="filter_headings">Category</h3>
-                <div class="inp_checkbox">
+                <div class="inp_checkbox flex flex_justify_start flex_align_center">
                     <input type="checkbox" class="input_checkbox">
                     <p class="checkbox_notify">Men Clothing</p>
                 </div>
-                <div class="inp_checkbox">
+                <div class="inp_checkbox flex flex_justify_start flex_align_center">
                     <input type="checkbox" class="input_checkbox">
                     <p class="checkbox_notify">Women Clothing</p>
                 </div>
             </div>
 
-            <div class="filter_rating flex_column filter_spaces">
+            <div class="filter_rating flex flex_col filter_spaces">
                 <h3 class="filter_headings">Rating</h3>
-                <form class="rating_options flex_column">
+                <form class="rating_options flex flex_col">
                     <label>
                         <input type="radio" name="rating" value="4 Stars & above" /> 4 Stars & above
                     </label>
@@ -100,9 +97,9 @@
                 </form>
             </div>
 
-            <div class="filter_sortby flex_column filter_spaces">
+            <div class="filter_sortby flex flex_col filter_spaces">
                 <h3 class="filter_headings">Sort by</h3>
-                <form class="rating_options flex_column">
+                <form class="rating_options flex flex_col">
                     <label>
                         <input type="radio" name="rating" value="Price - Low to High" /> Price - Low to High
                     </label>
@@ -117,30 +114,29 @@
         <!---- Product List - Main ---->
 
         <main class="product_container">
-            <div class="product_heading">
+            <div class="product_heading flex flex_justify_start flex_align_center">
                 <h3>Showing All Products</h3>
                 <p>(Showing 10 Products)</p>
             </div>
 
             <div class="product_list">
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
+                            <span class="pill">Sale</span>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -148,23 +144,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -172,23 +166,22 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
+                            <span class="pill">Sale</span>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -196,23 +189,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -220,23 +211,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -244,23 +233,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -268,23 +255,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -292,23 +277,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -316,23 +299,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 
@@ -340,23 +321,21 @@
                     </div>
                 </div>
 
-                <div class="card_image">
+                <div class="card_image flex">
                     <div class="card_vertical">
-                        <div class="card_vertical_info flex_column">
+                        <div class="card_vertical_info flex flex_col flex_justify_start flex_wrap">
                             <img class="img_responsive adjust_image" src="/images/women2.jpg" alt="shopping-item">
-                            <p class="card_text">Levis Blue Denim Jacket</p>
-                            <p class="card_subtext">Captivate look with this Denim Jacket</p>
-                            <p class="card_text card_price">₹2,999
+                            <p class="card_text left_space">Levis Blue Denim Jacket</p>
+                            <p class="card_subtext left_space">Captivate look with this Denim Jacket</p>
+                            <p class="card_text card_price left_space">₹2,999
                                 <span class="text_line_through">₹4,999</span>
                             </p>
                             
                             <button class="btn btn_secondary btn_toast right_space btn_leading">Add to Cart</button>
-                            <span class="card_heart_icon">
-                                <i class="fa fa-heart"></i>
-                            </span>
+                            <i class="fa-solid fa-heart icon"></i>
 
-                            <div class="alert_success toast toast_box">
-                                <span class="material-icons-outlined">task_alt</span>
+                            <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
+                                <i class="fa-solid fa-check"></i>
                                 <span>Added to Cart - check it out! </span>
                             </div>
 

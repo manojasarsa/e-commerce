@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/auth/auth.css">
     <link rel="stylesheet" href="/homepage.css">
-    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/docs.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/common-css/common.css">
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
     <title>SignUp</title>
 </head>
 
 <body>
 
     <header class="main_header">
-        <div class="navigation" id="header_box">
+        <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
             <div class="nav_left logo">
                 <a class="header_logo" href="/">easYbuY</a>
                 <p class="tagline">We Value Your Choices</p>
@@ -25,32 +22,36 @@
             <div class="nav_center searchbar">
                 <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
             </div>
-            <div class="nav_right">
-                <button class="header_btn">
-                    <a class="btn btn_primary" href="/auth/login.html">Login</a>
-                </button>
+            <div class="nav_right flex flex_justify_between flex_align_center">
+
+                <a class="btn btn_primary" href="/auth/login.html">Login</a>
 
                 <div class="badge_container badge_icon">
-                    <i class="fa fa-heart-o"></i>
-                    <span class="badge_icon_num badge_status"> 3 </span>
+                    <a href="/cart-and-wishlist/wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 3 </span>
+                    </a>
                 </div>
 
                 <div class="badge_container badge_icon">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span class="badge_icon_num badge_status"> 4 </span>
+                    <a href="/cart-and-wishlist/cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 4 </span>
+                    </a>
                 </div>
+
             </div>
         </div>
     </header>
         
-    <div class="input_container flex_column" id="auth_container">
-        <form class="input_field flex_column">
+    <div class="input_container flex flex_col" id="auth_container">
+        <form class="input_field flex flex_col">
             <h2 class="input_heading">Signup</h2>
             <label class="input_label">Email address</label>
             <input class="input_box" type="email" placeholder="manoj@neog.camp" required />
             <label class="input_label">Create Password</label>
             <input class="input_box" type="name" placeholder="***********" required />
-            <div class="inp_checkbox">
+            <div class="inp_checkbox flex flex_justify_start flex_align_center">
                 <input type="checkbox" class="input_checkbox"> 
                 <p class="checkbox_notify">I accept all Terms & Conditions</p>
             </div>
