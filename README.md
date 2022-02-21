@@ -1,7 +1,7 @@
 # *easYbuY-ecom-ui*
  
  *easYbuY* is an fashion e-commerce application which is a one stop shop for all your fashion and lifestyle needs. 
- It includes following features: 
+ It includes following components: 
 
  *  Home Page
  *  Product Listing Page
