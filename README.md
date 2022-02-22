@@ -12,3 +12,4 @@
  *  Search
  *  Loading & Alerts
  *  Remember me while login
+ *  User Profile Page

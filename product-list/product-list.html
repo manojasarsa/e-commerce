@@ -29,6 +29,28 @@
                 <div class="nav_right flex flex_justify_between flex_align_center">
     
                     <a class="btn btn_primary" href="/auth/login.html">Login</a>
+
+                    <a class="badge_container badge_icon">
+                        <i class="fas fa-user-circle profile"></i>
+                    </a>
+
+                    <div class="profile_box profile_menu flex_col">
+                        <div class="profile_options">
+                            <ul class="menu flex flex_col flex_justify_center flex_align_start">
+                                <div class="flex flex_row flex_justify_around flex_align_center">
+                                    <p>New Customer?</p>
+                                    <a class="btn btn_secondary" href="/auth/signup.html">Sign Up</a>
+                                </div>
+                                <a class="menu_link" href="/user-profile/user-profile.html" ><li class="profile_content">Your Profile</li> </a>
+                                <a class="menu_link" href="#"><li class="profile_content">Order Summary</li> </a>
+                                <a class="menu_link" href="#"><li class="profile_content">Apply Coupons</li> </a>
+                                <a class="menu_link" href="#"><li class="profile_content">Checkout</li> </a>
+                                <a class="menu_link" href="#"> <li class="profile_content">Address Management</li></a>
+                                <a class="menu_link" href="/auth/forgotpwd.html" ><li class="profile_content">Forgot Password</li> </a>
+                                <a class="menu_link" href="/auth/logout.html"><li class="profile_content">Logout</li> </a>
+                            </ul>
+                        </div>
+                    </div>
     
                     <div class="badge_container badge_icon">
                         <a href="/cart-and-wishlist/wishlist.html">
@@ -347,6 +369,7 @@
     </div>
 
     <script src="/javascript/alerts.js"></script>
+    <script src="/javascript/user-profile.js"></script>
 
 </body>
 </html>
