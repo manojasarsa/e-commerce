@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/auth/auth.css">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/user-profile/user-profile.css">
+    <link rel="stylesheet" href="/common-css/common.css">
+    <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
+            <div class="nav_left logo">
+                <a class="header_logo" href="/">easYbuY</a>
+                <p class="tagline">We Value Your Choices</p>
+            </div>
+            <div class="nav_center searchbar">
+                <input type="search" class="input input_search search"
+                    placeholder="Search for products, brands and more" />
+            </div>
+            <div class="nav_right flex flex_justify_between flex_align_center">
+
+                <a class="btn btn_primary" href="/auth/login.html">Login</a>
+
+                <a class="badge_container badge_icon">
+                    <i class="fas fa-user-circle profile"></i>
+                </a>
+
+                <div class="profile_box profile_menu flex_col">
+                    <div class="profile_options">
+                        <ul class="menu flex flex_col flex_justify_center flex_align_start">
+                            <div class="flex flex_row flex_justify_around flex_align_center">
+                                <p>New Customer?</p>
+                                <a class="btn btn_secondary" href="/auth/signup.html">Sign Up</a>
+                            </div>
+                            <a class="menu_link" href="/user-profile/user-profile.html">
+                                <li class="profile_content">Your Profile</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Order Summary</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Apply Coupons</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Checkout</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Address Management</li>
+                            </a>
+                            <a class="menu_link" href="/auth/forgotpwd.html">
+                                <li class="profile_content">Forgot Password</li>
+                            </a>
+                            <a class="menu_link" href="/auth/logout.html">
+                                <li class="profile_content">Logout</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="badge_container badge_icon">
+                    <a href="/cart-and-wishlist/wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 3 </span>
+                    </a>
+                </div>
+
+                <div class="badge_container badge_icon">
+                    <a href="/cart-and-wishlist/cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center"> 4 </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="user_profile_main flex flex_col">
+
+        <h2>Account</h2>
+        <h4 class="lines">Manoj Asarsa</h4>
+
+        <div class="profile_container flex flex_row flex_justify_center flex_align_center">
+
+            <div class="quick_links flex flex_col flex_justify_center flex_align_center">
+
+                <ul class="menu flex flex_col flex_justify_center flex_align_start">
+                    <a class="menu_link" href="#">
+                        <li class="profile_content">Overview</li>
+                    </a>
+                    <a class="menu_link" href="#">
+                        <li class="profile_content">Order Summary</li>
+                    </a>
+                    <a class="menu_link" href="#">
+                        <li class="profile_content">Apply Coupons</li>
+                    </a>
+                    <a class="menu_link" href="#">
+                        <li class="profile_content">Address Management</li>
+                    </a>
+                    <a class="menu_link" href="/auth/forgotpwd.html">
+                        <li class="profile_content">Forgot Password</li>
+                    </a>
+                    <a class="menu_link" href="/auth/logout.html">
+                        <li class="profile_content">Logout</li>
+                    </a>
+                </ul>
+
+            </div>
+
+            <div class="profile_edit flex flex_col flex_justify_center flex_align_center">
+
+                <h2 class="lines">Profile Details</h2>
+
+                <div class="edit_list flex flex_col flex_justify_center flex_align_start">
+
+                    <!-- details divs -->
+                    <div class="profile_details flex flex_row ">
+                        <span>Full Name</span>
+                        <span>Manoj Asarsa</span>
+                    </div>
+                    <div class="profile_details flex flex_row ">
+                        <span>Mobile Number</span>
+                        <span>982899999</span>
+                    </div>
+                    <div class="profile_details flex flex_row flex_justify_between">
+                        <span>Email ID</span>
+                        <span>manojasarsa@xyz.com</span>
+                    </div>
+                    <div class="profile_details flex flex_row flex_justify_between flex_align_start">
+                        <span>Gender</span>
+                        <span>MALE</span>
+                    </div>
+                    <div class="profile_details flex flex_row flex_justify_between">
+                        <span>Date of Birth</span>
+                        <span>- not added -</span>
+                    </div>
+                    <div class="profile_details flex flex_row flex_justify_between">
+                        <span>Location</span>
+                        <span>- not added -</span>
+                    </div>
+
+                    <a class="btn btn_secondary" href="#">Edit</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="/javascript/user-profile.js"></script>
+
+</body>
+
+</html>

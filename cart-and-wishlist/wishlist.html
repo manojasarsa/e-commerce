@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/cart-and-wishlist/wishlist.css">
     <link rel="stylesheet" href="/cart-and-wishlist/cart.css">
+    <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/common-css/common.css">
     <link rel="stylesheet" href="https://zero-ui.netlify.app/docs/main.css">
     <title>Wishlist Page</title>
 </head>
 
 <body>
-    
+
     <header class="main_header">
         <div class="navigation flex flex_justify_between flex_align_center" id="header_box">
             <div class="nav_left logo">
@@ -21,11 +22,48 @@
                 <p class="tagline">We Value Your Choices</p>
             </div>
             <div class="nav_center searchbar">
-                <input type="search" class="input input_search search" placeholder="Search for products, brands and more" />
+                <input type="search" class="input input_search search"
+                    placeholder="Search for products, brands and more" />
             </div>
             <div class="nav_right flex flex_justify_between flex_align_center">
 
                 <a class="btn btn_primary" href="/auth/login.html">Login</a>
+
+                <a class="badge_container badge_icon">
+                    <i class="fas fa-user-circle profile"></i>
+                </a>
+
+                <div class="profile_box profile_menu flex_col">
+                    <div class="profile_options">
+                        <ul class="menu flex flex_col flex_justify_center flex_align_start">
+                            <div class="flex flex_row flex_justify_around flex_align_center">
+                                <p>New Customer?</p>
+                                <a class="btn btn_secondary" href="/auth/signup.html">Sign Up</a>
+                            </div>
+                            <a class="menu_link" href="/user-profile/user-profile.html">
+                                <li class="profile_content">Your Profile</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Order Summary</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Apply Coupons</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Checkout</li>
+                            </a>
+                            <a class="menu_link" href="#">
+                                <li class="profile_content">Address Management</li>
+                            </a>
+                            <a class="menu_link" href="/auth/forgotpwd.html">
+                                <li class="profile_content">Forgot Password</li>
+                            </a>
+                            <a class="menu_link" href="/auth/logout.html">
+                                <li class="profile_content">Logout</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="badge_container badge_icon">
                     <a href="/cart-and-wishlist/wishlist.html">
@@ -82,7 +120,7 @@
 
                         <button class="btn btn_secondary btn_toast right_space btn_leading">Move to Cart</button>
                         <i class="fa-solid fa-heart icon"></i>
-                        
+
                         <div class="alert_success toast flex flex_justify_center flex_align_center  toast_box">
                             <i class="fa-solid fa-check"></i>
                             <span>Moved to Cart - check it out! </span>
@@ -136,7 +174,10 @@
         </div>
     </main>
 
+    <script src="/javascript/user-profile.js"></script>
     <script src="/javascript/alerts.js"></script>
+    
 
 </body>
+
 </html>
